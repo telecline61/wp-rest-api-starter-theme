@@ -1,0 +1,29 @@
+/*
+Theme Name: WP REST API STARTER
+Theme URI:
+Author: Chris Cline
+Author URI: http://christiancline.com/
+Description: Bare Bones Start for dev/messing around with the Wordpress Rest API configured to retrieve posts.
+*/
+
+h1.page-title {
+	margin-left: 15px;
+}
+header.content-header {
+	margin: 50px 0;
+}
+.data-wrap{
+	min-height: 370px !important;
+}
+.data-wrap p {
+	margin-bottom: 20px;
+}
+.no-padding-left {
+	padding-left: 0 !important;
+}
+.vis {
+	display:none;
+}
+.vis.show-me {
+	display:block !important;
+}
