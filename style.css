@@ -6,7 +6,7 @@ Author URI: http://christiancline.com/
 Description: Bare Bones Start for dev/messing around with the Wordpress Rest API configured to retrieve posts.
 */
 
-h1.page-title {
+h1 {
 	margin-left: 15px;
 }
 header.content-header {
@@ -14,9 +14,11 @@ header.content-header {
 }
 .data-wrap{
 	min-height: 370px !important;
+	margin: 0 -15px;
 }
 .data-wrap p {
 	margin-bottom: 20px;
+	font-size: 18px;
 }
 .no-padding-left {
 	padding-left: 0 !important;
@@ -25,5 +27,8 @@ header.content-header {
 	display:none;
 }
 .vis.show-me {
-	display:block !important;
+	display: block !important;
+}
+#show-btn {
+	margin-bottom: 30px;
 }

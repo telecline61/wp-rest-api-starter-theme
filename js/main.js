@@ -47,16 +47,17 @@ function createHtml(postsData){
         //featured image via registered field in functions.php
         var myImg = postsData[i].my_featured_image_src;
         //var imgLink = postsData[i]._links['wp:attachment'][0].href;
+        var fullImg = myImg.replace('-260x345.jpg', '.jpg' );
 
         //Acf custom field (uses plugin to add acf/REST support)
         var testField = postsData[i].acf.test_field;
 
-        myHtmlString += '<div class="col-md-6 data-wrap">'
-        myHtmlString += '<h2>' + postsData[i].title.rendered + '</h2>';
-        myHtmlString +=  '<div class="col-md-6 no-padding-left">' + postsData[i].excerpt.rendered + '</div>';
+        myHtmlString += '<div class="col-md-12 data-wrap">';
+        myHtmlString += '<div class="col-md-3"><img src="' + myImg + '" class="img-responsive" /></div>';
+        myHtmlString +=  '<div class="col-md-9 pull-right">';
+        myHtmlString += '<h2>' + postsData[i].title.rendered + '</h2>' + postsData[i].content.rendered + '<br /><a href="' + fullImg + '">View Full Cover</a></div>';
 
-        myHtmlString += '<img src="' + myImg + '" />';
-        //console.log();
+        console.log(fullImg);
 
         myHtmlString += '</div>';
 
