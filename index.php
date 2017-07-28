@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area col-md-12">
-	<main id="main" class="site-main" role="main">
+	<div id="main" class="site-main" role="main">
 		<header class="page-header">
 			<h1 class="page-title">Basic WP Rest API Starter</h1>
 		</header>
@@ -12,7 +12,7 @@
 
 		<?php //echo do_shortcode( '[wp_rest_api_posts]'); ?>
 
-	</main><!-- .site-main -->
+	</div><!-- .site-main -->
 </div><!-- .content-area -->
 
 <?php get_footer(); ?>
