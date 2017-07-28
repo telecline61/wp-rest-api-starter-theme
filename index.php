@@ -1,18 +1,30 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area col-md-12">
-	<main id="main" class="site-main" role="main">
+	<div id="main" class="site-main" role="main">
 		<header class="page-header">
-			<h1 class="page-title">Basic WP Rest API Starter</h1>
+			<div class="row">
+				<h1 class="page-title col-sm-8 col-md-8">70s and 80s</h1>
+				<!-- Year sorter -->
+				<div class="form-group col-md-2">
+					<select id="theYear" class="form-control">
+						<option value="3,4">All</option>
+						<option value="4">1970s</option>
+						<option value="3">1980s</option>
+					</select>
+				</div>
+				<!-- order sorter -->
+				<div class="form-group col-md-2">
+					<select id="myOrder" class="form-control">
+						<option value="asc">Oldest first</option>
+						<option value="desc">Newest first</option>
+					</select>
+				</div>
+			</div>
 		</header>
-
 		<!-- Load posts via WP REST API -->
-		<button id="show-btn">Show Posts</button>
 		<div id="posts-wrap" class="row vis"></div>
-
-		<?php //echo do_shortcode( '[wp_rest_api_posts]'); ?>
-
-	</main><!-- .site-main -->
+	</div><!-- .site-main -->
 </div><!-- .content-area -->
 
 <?php get_footer(); ?>

@@ -5,6 +5,7 @@
 
 //enqueue styles/scripts
 function load_my_starter_styles() {
+
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	//load bootstrap css from cdn
@@ -12,6 +13,7 @@ function load_my_starter_styles() {
 }
 
 function load_my_starter_scripts() {
+
 	//bootstrap js from cdn
 	wp_enqueue_script( 'bootstrap3_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery' ),  false );
 
@@ -31,10 +33,12 @@ add_theme_support( 'post-thumbnails');
 
 //add featured image to JSON via field
 add_action( 'rest_api_init', 'add_thumbnail_to_JSON' );
+
 function add_thumbnail_to_JSON() {
+
 //Add featured image
 register_rest_field( 'post',
-    'my_featured_image_src', //NAME OF THE NEW FIELD TO BE ADDED - you can call this anything
+    'my_featured_image_src', //call this anything
     array(
         'get_callback'    => 'get_image_src',
         'update_callback' => null,
@@ -44,6 +48,6 @@ register_rest_field( 'post',
 }
 
 function get_image_src( $object, $field_name, $request ) {
-    $feat_img_array = wp_get_attachment_image_src($object['featured_media'], 'thumbnail', true);
-    return $feat_img_array[0];
+	$feat_img_array = wp_get_attachment_image_src($object['featured_media'], 'thumbnail', true);
+	return $feat_img_array[0];
 }

@@ -8,13 +8,26 @@ Description: Bare Bones Start for dev/messing around with the Wordpress Rest API
 
 h1 {
 	margin-left: 15px;
+	margin-top:0;
+}
+#page .page-header {
+	margin-top: 0;
+	padding-top: 6px;
+}
+#page .page-header h1 {
+	margin-top: 0;
 }
 header.content-header {
 	margin: 50px 0;
 }
-.data-wrap{
-	min-height: 370px !important;
-	margin: 0 -15px;
+.data-wrap {
+	margin: 0 -15px 30px -15px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 30px;
+}
+.data-wrap .copy-section {
+	padding: 10px;
+	background: #eeeeee;
 }
 .data-wrap p {
 	margin-bottom: 20px;
@@ -23,12 +36,18 @@ header.content-header {
 .no-padding-left {
 	padding-left: 0 !important;
 }
-.vis {
-	display:none;
+.modal-body {
+	padding: 0 !important
 }
-.vis.show-me {
-	display: block !important;
-}
-#show-btn {
-	margin-bottom: 30px;
-}
+
+@media (min-width: 768px){
+	#masthead .navbar>.container .navbar-brand,
+	#masthead .navbar>.container-fluid .navbar-brand {
+	    margin-left: 0;
+	}
+)
+@media (max-width: 768px){
+	.img-wrap {
+	    margin-bottom: 30px !important;
+	}
+)
