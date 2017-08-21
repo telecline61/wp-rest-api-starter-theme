@@ -20,7 +20,7 @@ if(postsContainer ){
         //vars for the post filters
         var theYear =   magizineYear.options[magizineYear.selectedIndex].value;
         var theOrder =  postOrder.options[postOrder.selectedIndex].value;
-        var theUrl = 'http://localhost/guitar-player-zines/wp-json/wp/v2/posts?categories='+ theYear +'&per_page=100&order='+ theOrder +'&_embed';
+        var theUrl = 'http://christiancline.com/wp-api-testing/wp-json/wp/v2/posts?categories='+ theYear +'&per_page=100&order='+ theOrder +'&_embed';
 
         //getting a number of posts and making embed stuff available
         myRequest.open('GET',theUrl);
