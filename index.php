@@ -3,7 +3,7 @@
 <div id="primary" class="content-area col-md-12">
 	<div id="main" class="site-main" role="main">
 		<header class="page-header">
-			<div class="row">
+			<div class="row top">
 				<h1 class="page-title col-sm-8 col-md-8">70s and 80s</h1>
 				<!-- Year sorter -->
 				<div class="form-group col-md-2">

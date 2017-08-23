@@ -17,8 +17,9 @@ h1 {
 #page .page-header h1 {
 	margin-top: 0;
 }
-header.content-header {
-	margin: 50px 0;
+.row.top {
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 .data-wrap {
 	margin: 0 -15px 30px -15px;
@@ -28,6 +29,7 @@ header.content-header {
 .data-wrap .copy-section {
 	padding: 10px;
 	background: #eeeeee;
+	margin-bottom: 30px;
 }
 .data-wrap p {
 	margin-bottom: 20px;
@@ -39,15 +41,6 @@ header.content-header {
 .modal-body {
 	padding: 0 !important
 }
-
-@media (min-width: 768px){
-	#masthead .navbar>.container .navbar-brand,
-	#masthead .navbar>.container-fluid .navbar-brand {
-	    margin-left: 0;
-	}
-)
-@media (max-width: 768px){
-	.img-wrap {
-	    margin-bottom: 30px !important;
-	}
-)
+.img-wrap {
+	margin-bottom: 30px !important;
+}

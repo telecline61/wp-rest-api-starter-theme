@@ -57,8 +57,8 @@ function createHtml(postsData){
         var fullImg = myImg.replace('-260x325.jpg', '.jpg' );
 
         myHtmlString += '<div class="col-md-12 data-wrap">';
-        myHtmlString += '<div class="col-md-3 img-wrap"><a href="#" data-toggle="modal" data-target="#myModal'+[i]+'"><img src="' + myImg + '" class="img-responsive" /></a></div>';
-        myHtmlString +=  '<div class="col-md-9 copy-section">';
+        myHtmlString += '<div class="col-sm-3 col-md-3 img-wrap"><a href="#" data-toggle="modal" data-target="#myModal'+[i]+'"><img src="' + myImg + '" class="img-responsive" /></a></div>';
+        myHtmlString +=  '<div class="col-sm-9 col-md-9 copy-section">';
         myHtmlString += '<h2 class="mag-title">' + postsData[i].title.rendered + '</h2>' + postsData[i].content.rendered + '<div id="myModal'+[i]+'" class="modal fade"><div class="modal-dialog"><div class="modal-content"><img src="'+ fullImg +'" class="img-responsive" /></div></div></div></div>';
         myHtmlString += '</div><div class="clearfix"></div>';
     }
